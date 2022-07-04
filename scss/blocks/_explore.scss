@@ -1,0 +1,150 @@
+.explore {
+    padding: 75px 0;
+    background-color: $color-black;
+}
+
+.explore__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore__content-left {
+    padding-right: 3px;
+    width: 100%;
+    max-width: 660px;
+}
+
+.explore__title {
+    width: 100%;
+    position: relative;
+    margin-bottom: 103px;
+    font-family: $font-forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.explore__title::before {
+    position: absolute;
+    bottom: -25px;
+   @include horizantal-line(660px, 3px, $line-color,)
+}
+
+.explore__item {
+    max-width: 660px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.explore__item--yellow {
+    color: $hover-color;
+}
+
+.explore__item:last-child {
+    margin-bottom: 0px;
+}
+
+.content-right {
+    width: 100%;
+    max-width: 620px;
+    min-height: auto;
+}
+
+.explore__img {
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    object-fit: cover;
+}
+
+@include breakpoint-down(1320px) {
+
+    .explore {
+        padding: 60px 0;
+    }
+    
+    .explore__inner {
+        display: block;
+    }
+    
+    .explore__content-left {
+        margin: 0 auto;
+        padding-right: 0;
+        width: 100%;
+        max-width: 984px;
+    }
+
+    .explore__title {
+        margin-bottom: 83px;
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .explore__list {
+        margin-bottom: 62px;
+    }
+    
+    .explore__item {
+        max-width: 984px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 38px;
+    }
+    
+    .explore__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .explore__item:nth-child(3) {
+       display: none;
+    }
+
+    .content-right {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 728px;
+        min-height: auto;
+    }
+    
+    .explore__img {
+        width: 100%;
+        max-width: 728px;
+        height: auto;
+        object-fit: cover;
+    }
+  
+}
+
+@include breakpoint-down(930px){
+    .explore__title {
+        margin-bottom: 63px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .explore__item {
+        display: none;
+    }
+
+}
+
+@include breakpoint-down(624px){
+    .explore {
+        padding: 40px 0;
+    }
+
+    .explore__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .explore__item {
+        display: none;
+    }    
+
+}

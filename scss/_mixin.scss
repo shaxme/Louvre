@@ -1,0 +1,15 @@
+// horizantal line
+@mixin horizantal-line($max-width, $heght, $bg-color) {
+    width: 100%;
+    max-width: $max-width;
+    height: $heght;
+    background-color: $bg-color;
+    content: "";
+}
+
+// Responsive mixins
+@mixin breakpoint-down($screen-width){
+    @media only screen and(max-width:$screen-width){
+        @content;
+    }
+}

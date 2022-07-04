@@ -1,0 +1,231 @@
+.tour {
+    padding: 75px 0;
+    background-color: $color;
+}
+
+.tour__title {
+    position: relative;
+    margin-bottom: 103px;
+    height: 90px;
+    font-family: $font-forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+
+.tour__title::before {
+    position: absolute;
+    bottom: -25px;
+   @include horizantal-line(1440px, 3px, $line-color,)
+}
+
+.tour__carts {
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    justify-content: space-between;
+}
+
+.tour__cart{
+    margin-bottom: 75px;
+    width: 420px;
+    height: 424px;
+}
+
+.cart__img {
+    width: 420px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.cart__title {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    font-family: $font-forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $color-black;
+}
+
+.cart__title::before {
+    position: absolute;
+    bottom: -10px;
+    @include horizantal-line(300px, 2px, $line-color,)
+}
+
+.cart__place {
+    margin-bottom: 10px;
+    color: $color-black;
+}
+
+.cart__adress {
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-black;
+}
+
+
+@include breakpoint-down(1320px){
+    .tour {
+        padding: 60px 0;
+        background-color: $color;
+    }
+    
+    .tour__title {
+        margin-bottom: 83px;
+        height: 75px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    }
+
+    .tour__carts {
+        display: grid;
+        grid-template-columns: 330px 330px;
+        justify-content: space-evenly;
+    }
+    
+    .tour__cart{
+        margin-bottom: 40px;
+        width: 330px;
+        height: 345px;
+    }
+    
+    .cart__img {
+        width: 330px;
+        height: 215px;
+    }
+    
+    .cart__title {
+        font-size: 28px;
+        line-height: 31px;
+        letter-spacing: 3px;
+    }
+    
+    .cart__title::before {
+        @include horizantal-line(150px, 2px, $line-color,)
+    }
+    
+    .cart__place {
+        font-size: 20px;
+        line-height : 23px;
+        color: $color-black;
+    }
+    
+    .cart__adress {
+        font-size: 16px;
+        line-height: 29px;
+        color: $color-black;
+    }
+    
+
+}
+
+@include breakpoint-down(930px){
+    .tour {
+        padding: 40px 0;
+    }
+    
+    .tour__title {
+        margin-bottom: 63px;
+        height: 40px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .tour__title::before {
+        bottom: -20px;
+    }
+
+    .tour__carts {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        justify-content: space-evenly;
+    }
+    
+    .tour__cart{
+        margin-bottom: 40px;
+        width: 280px;
+        height: 301px;
+    }
+    
+    .cart__img {
+        width: 280px;
+        height: 180px;
+    }
+    
+    .cart__title {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 3px;
+    }
+    
+    .cart__title::before {
+        @include horizantal-line(150px, 2px, $line-color,)
+    }
+    
+    .cart__place {
+        font-size: 18px;
+        line-height : 21px;
+        color: $color-black;
+    }
+    
+    .cart__adress {
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-black;
+    }
+    
+}
+
+
+@include breakpoint-down(624px){
+    
+    .tour__title {
+        height: 40px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .tour__carts {
+        display: block;
+
+    }
+    
+    .tour__cart{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 330px;
+        height: 295px;
+    }
+    
+    .cart__img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+    
+    .cart__title {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px;
+    }
+    
+    .cart__place,
+    .cart__adress {
+        font-size: 16px;
+        line-height : 19px;
+        color: $color-black;
+    }
+    
+}
+

@@ -1,0 +1,107 @@
+.header {
+  height: 150px;
+  background-color: $color-black;
+}
+
+.header__inner {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  width: 199px;
+  height: 33px;
+}
+
+.logo__img:hover {
+  opacity: 0.7;
+}
+
+.nav{
+
+  &__list {
+    display: flex;
+  }
+
+  &__item +    &__item {
+    margin-left: 65px;
+  }
+
+  &__link {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: $color;
+    transition: all .4s linear;
+  }
+
+  &__link:hover {
+    color: $hover-color;
+  }
+
+  &__link:active {
+    opacity: 0.5;
+    color: #7e6c51;
+  }
+
+}
+
+.header__button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__menu-oppen {
+  width: 32px;
+  height: 18px;
+}
+
+@include breakpoint-down(1321px) {
+  .header {
+    height: 130px;
+  }
+
+  .header__inner {
+    height: 130px;
+  }
+
+}
+
+@include breakpoint-down(1110px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__button {
+    display: block;
+  }
+
+}
+
+@include breakpoint-down(930px) {
+  .header {
+    height: 110px;
+  }
+
+  .header__inner {
+    height: 110px;
+  }
+
+}
+
+@include breakpoint-down(420px) {
+  .header {
+    height: 90px;
+  }
+
+  .header__inner {
+    height: 90px;
+  }
+
+}
