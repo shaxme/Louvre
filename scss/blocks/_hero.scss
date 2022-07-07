@@ -52,24 +52,7 @@
   letter-spacing: 2px;
 }
 
-.hero__button {
-  width: 360px;
-  height: 75px;
-  padding: 0 64px;
-  background-color: $line-color;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: all .4s linear;
-}
-
-.hero__button:hover {
-  transition: all .4s linear;
-  background-color: $hover-color;
-}
-
 .hero__button-link {
-  height: 100%;
   font-family: $font-roboto;
   font-style: normal;
   font-weight: 300;
@@ -78,6 +61,20 @@
   text-align: center;
   letter-spacing: 2px;
   color: #FFFFFF;
+  width: 360px;
+  height: 75px;
+  padding: 0 64px;
+  background-color: $line-color;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all .4s linear;
+  padding: 20px 40px;
+}
+
+.hero__button-link:hover {
+  transition: all .4s linear;
+  background-color: $hover-color;
 }
 
 .slider__content {
@@ -162,10 +159,10 @@
     line-height: 28px;
   }
   
-  .hero__button {
+  .hero__button-link {
     width: 300px;
     height: 60px;
-    padding: 0 44px;
+    padding: 20px 40px;
   }
   
   .hero__button-link {
@@ -234,7 +231,7 @@
     line-height: 23px;
   }
   
-  .hero__button {
+  .hero__button-link {
     display: none;
   }
   

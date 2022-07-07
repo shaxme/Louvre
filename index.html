@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Museum</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Louvre Museum</title>
 </head>
 <body>
   <header class="header">
     <div class="header__container container">
       <div class="header__inner">
         <a href="./index.html" class="header__logo logo">
-          <img class="logo__img" src="./imgs/Logo.svg" alt="Logo" width="199" height="33">
+          <img class="site__logo" src="./imgs/logo.svg" alt="Logo" width="199" height="33">
         </a>
           <nav class="header__nav nav">
-            <ul class="nav__list">
 
+            <ul class="nav__list">
               <li class="nav__item">
                 <a href="#tour" class="nav__link">Visiting</a>
               </li>
@@ -26,31 +26,32 @@
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Video</a>
+                <a href="#vedio" class="nav__link">Video</a>
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Gallery</a>
+                <a href="#gallery" class="nav__link">Gallery</a>
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Tickets</a>
+                <a href="#tickets" class="nav__link">Tickets</a>
               </li>
 
               <li class="nav__item">
-                  <a href="#" class="nav__link">Contacts</a>
+                  <a href="#contacts" class="nav__link">Contacts</a>
               </li>
             </ul>
+
           </nav>
 
-          <button class="header__button">
-            <img src="./imgs/menu.svg" alt="Menu" class="header__menu-oppen" width="32" height="18px">
+          <button class="header__button" type="button">
+            <img  class="header__menu-oppen" src="./imgs/menu.svg" alt="MenuBtn" width="32" height="18">
           </button>
       </div>
     </div>
   </header>
 
-  <!--///////// section hero \\\\\\\\\\ -->
+  <!-- //////////////////// section hero \\\\\\\\\\\\\\\\\\\\\\\ -->
 
   <main class="main">
     <section class="hero">
@@ -60,10 +61,10 @@
         <div class="hero__inner">
           <div class="hero__content">
             <h2 class="hero__title">Welcome <br> to the Louvre</h2>
+
             <p class="hero__description">From the castle to the museum</p>
-            <button class="hero__button" type="button">
-              <a href="#" class="hero__button-link">Discover the Louvre</a>
-            </button>
+
+            <a href="#" class="hero__button-link">Discover the Louvre</a>
           </div>
 
           <div class="hero__slider slider">
@@ -71,8 +72,11 @@
               <div class="slide">
                 <picture class="slide__picture">
                   <source media="(max-width:1321px)" srcset="./imgs/slide-medium-img.png">
+
                   <source media="(max-width:930px)" srcset="./imgs/slide-medium2-img.png">
+
                   <source media="(max-width:420px)" srcset="./imgs/slide-smoll-img.png">
+
                   <img class="slide__img"  src="./imgs/slide-img.png" alt="Slide img" >
                 </picture>
               </div>
@@ -81,47 +85,65 @@
         </div>
       </div>
     </section>
-        
+
+<!-- /////////////////// section tour\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+
     <section class="tour" id="tour">
       <div class="tout__container container">
         <div class="tour__inner">
           <h2 class="tour__title">Virtual tour</h2>
 
           <ul class="tour__carts">
+
             <li class="tour__cart cart">
               <picture class="cart__imgs">
-                <img src="./imgs/royal-palace.png" alt="" class="cart__img">
+                <img class="cart__img" src="./imgs/royal-palace.png" alt="Royal Palace">
               </picture>
+
               <h3 class="cart__title">Royal Palace</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
             </li>
 
             <li class="tour__cart cart">
               <picture class="cart__imgs">
-                <img src="./imgs/denon-wing.jpg" alt="" class="cart__img" >
+                <img  class="cart__img" src="./imgs/denon-wing.jpg" alt="Denon Wing">
               </picture>
+
               <h3 class="cart__title">Denon Wing</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
+
             </li>
 
             <li class="tour__cart cart">
               <picture class="cart__imgs">
-                <img src="./imgs/cart-img3.png" alt="" class="cart__img" >
+                <img class="cart__img" src="./imgs/cart-img3.png" alt="Colonnade Perrault">
               </picture>
+
               <h3 class="cart__title">Colonnade Perrault</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
+
             </li>
 
             <li class="tour__cart cart">
               <picture class="cart__imgs">
-                <img src="./imgs/cart-img4.png" alt="" class="cart__img" >
+                <img  class="cart__img"  src="./imgs/cart-img4.png" alt="Greek hall">
               </picture>
+
               <h3 class="cart__title">Greek hall</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
+
             </li>
 
             <li class="tour__cart cart">
@@ -129,23 +151,32 @@
                 <img src="./imgs/cart-img5.png" alt="" class="cart__img" >
               </picture>
               <h3 class="cart__title">Mona Lisa</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
+
             </li>
 
             <li class="tour__cart cart">
               <picture class="cart__imgs">
                 <img src="./imgs/cart-img6.png" alt="" class="cart__img" width="440" height="285">
               </picture>
+
               <h3 class="cart__title">Night Palace</h3>
+
               <p class="cart__place">360° Virtual Tour</p>
+
               <p class="cart__adress">Google Street Panorama View</p>
+
             </li>    
           </ul>
 
         </div>
       </div>
     </section>
+
+<!-- /////////////////// section explore \\\\\\\\\\\\\\\\\\\\\\\ -->
 
     <section class="explore" id="explore">
       <div class="explore__container container">
@@ -166,13 +197,280 @@
                 The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
               </li>
             </ul>
+
           </div>
+
           <div class="explore__content-right content-right">                       
-            <img class="explore__img" src="./imgs/explore-lg-img.png" alt="" >
+            <img class="explore__img" src="./imgs/explore-lg-img.png" alt="yellow veil" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- /////////////////// section youtube \\\\\\\\\\\\\\\\\\\\\\\  -->
+
+    <section class="youtube" id="vedio">
+      <div class="youtube__container container">
+        <div class="youtube__inner">
+          <div class="youtube__describe">
+            <h3 class="youtube__heading">Video journey</h3>
+
+            <div class="youtube__commet">
+              <p class="youtube__commet text">
+                Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+              </p>
+            </div>
+          </div>
+
+
+          <iframe class="youtube__vediofirst"  height="735" src="https://www.youtube.com/embed/N9BMlyiSNeU?controls=0&amp;start=22" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <ul class="youtube__list">
+            
+            <li class="youtube__item">
+              <img class="second" src="./imgs/dona.png" alt="donna" width="452" height="254">
+            </li>
+
+            <li class="youtube__item">
+              <img class="second" src="./imgs/la_venus.png" alt="La venus" width="452" height="254">
+            </li>
+
+            <li class="youtube__item">
+              <img class="second thirth" src="./imgs/dans.png" alt="Dans" width="452" height="254">
+            </li>
+
+          </ul>
+    
+        </div>
+        <span class="youtube__slider">
+          <img class="youtube__slider-img" src="./imgs/slider.png" alt="video slider pagination" width="200" height="12">
+        </span>
+      </div>
+    </section>
+
+<!--//////////////////// section gallery \\\\\\\\\\\\\\\\\\\\\\-->
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__container container">
+        <h3 class="gallery__heading">Art Gallery</h3>
+        <picture>
+          <!-- <source media="(max-width: 700px)" srcset="./img/rasm2@1x.png">
+          <source media="(max-width: 800px)" srcset="./img/rasm@1x.png"> -->
+          <img class="gallery__img2" src="./imgs/rasm2.png" alt="rasm2" width="600" height="637">
+
+          <img class="gallery__img1" src="./imgs/rasm.png" alt="rasm" width="930" height="1088">
+          
+          <img class="gallery__img" src="./imgs/all__gallery-img.png" alt="gallery all imgs" width="1440" height="1960">
+        </picture>
+      </div>
+    </section>
+
+    <!-- /////////////// section tickets \\\\\\\\\\\\\\\\\\\\\\-->
+    
+    <section class="tickets" id="tickets">
+      <div class="tickets__container container">
+        <div class="tickets__inner">
+          <h3 class="tickets__heading">BUY TICKETS</h3>
+
+          <span class="tikets__line line"></span>
+
+          <div class="tickets__content">
+            <div>
+              <picture class="tickets__pictire">
+                <img class="tickets__img" src="./imgs/xxx.png" alt="xxx picture" width="720" height="550">
+              </picture>
+            </div>
+            
+            <div class="tickets__type">
+              <h4 class="tickets__title">Ticket Type</h4>
+  
+              <ul class="tickets__list">
+                <li class="tickets__item">
+                  <p class="tickets__item-firts">
+                    Permanent exhibition
+                  </p>
+                </li>
+  
+                <li class="tickets__item">
+                  <p class="tickets__item-second">
+                    Temporary exhibition
+                  </p>
+                </li>
+  
+                <li class="tickets__item">
+                  <p class="tickets__item-thirth">
+                    Combined Admission
+                  </p>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="tickets__amount">
+  
+              <p class="tickets__text">Amount</p>
+  
+              <p class="tickets__basic">Basic 18+</p>
+
+              <div class="button_div">
+
+                <button id="decrement" onclick="stepper(this)"> - </button>
+                <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+                <button id="increment" onclick="stepper(this)"> + </button>
+
+                <script src="./js/script.js"></script>
+              </div>
+
+              <p class="tickets__basic">Senior 65+</p>
+
+              <picture>
+                <img class="tickets__imgs" src="./imgs/input2.png" alt="Input" width="150" height="45">
+              </picture>
+
+              <p class="tickets__price">Total €220</p>
+  
+              <a class="tickets_btn" href="#">
+                <p class="tickets__p">
+                  Buy Now
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bgimg"></div>
+      </div>
+    </section>
+
+<!-- //////////section contacts\\\\\\\\\\\\  -->
+
+    <section class="contacts" id="contacts">
+      <div class="contacts__container container">
+        <div class="contacts__inner">
+          <h3 class="contacts__heading">Contacts</h3>
+
+          <div class="contacts__map">
+            <div>
+              <h4 class="contacts__title">Palais Royal Musee du Louvre</h4>
+
+              <a class="contacts__address" href="https://goo.gl/maps/JwGdBpSsP1BoQe9u8">
+                address:75001 Paris, France
+              </a>
+
+              <a class="contacts__tel" href="tel:+33(0)40205050">phone:+33(0) 1 40 20 50 50</a>
+
+              <a class="contacts__mail" href="mailto:info@louvre.fr">mail:info@louvre.fr</a>
+            </div>
+
+            <iframe class="contacts__louvre" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874101278919!2d2.337644!3d48.8606111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre%20Museum!5e0!3m2!1sen!2s!4v1657058032555!5m2!1sen!2s" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+<!-- ///////////footer\\\\\\\\\\\\\\  -->
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__inner">
+        <a class="footer__logo" href="./index.html">
+          <img class="footer__img" src="./imgs/logo.svg" alt="site-logo" width="195" height="50">
+        </a>
+  
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#visiting">
+              Visiting
+            </a>
+          </li>
+  
+          <li class="footer__item">
+            <a class="footer__link" href="#explore">
+              Explore
+            </a>
+          </li>
+          
+          <li class="footer__item none">
+            <a class="footer__link" href="#vedio">
+              Video
+            </a>
+          </li>
+  
+        </ul>
+        <ul class="footer__list-none">
+          <li class="footer__item">
+            <a class="footer__link" href="#gallery">
+              Video
+            </a>
+          </li>
+  
+          <li class="footer__item">
+            <a class="footer__link" href="#tickets">
+              Gallery
+            </a>
+          </li>
+        </ul>
+  
+        <ul class="footer__list">
+          <li class="footer__item none">
+            <a class="footer__link" href="#gallery">
+              Gallery
+            </a>
+          </li>
+  
+          <li class="footer__item">
+            <a class="footer__link" href="#tickets">
+              Tickets
+            </a>
+          </li>
+  
+          <li class="footer__item">
+            <a class="footer__link" href="#contacts">
+              Contacts
+            </a>
+          </li>
+  
+        </ul>
+  
+        <ul class="footer__list-icon">
+          <li class="footer__item-icon">
+            <a class="footer__link-icon" href="https://www.youtube.com/channel/UCfa1ha-qeHPiQdUSXAdmLeA">
+              <img class="footer__img-icon" src="./imgs/youtube.svg" alt="You tube" width="48" height="48">
+            </a>
+          </li>
+          <li class="footer__item-icon">
+            <a class="footer__link-icon" href="https://www.instagram.com/_shax.me_/">
+              <img class="footer__img-icon" src="./imgs/instagram.svg" alt="Instagram" width="48" height="48">
+            </a>
+          </li>
+          <li class="footer__item-icon">
+            <a class="footer__link-icon" href="https://www.facebook.com/profile.php?id=100081532337178">
+              <img class="footer__img-icon" src="./imgs/facebook.svg" alt="Facebook" width="48" height="48">
+            </a>
+          </li>
+          <li class="footer__item-icon">
+            <a class="footer__link-icon" href="https://twitter.com/ShohsuvorA">
+              <img class="footer__img-icon" src="./imgs/twitter.svg" alt="Twitter" width="48" height="48">
+            </a>
+          </li>
+          <li class="footer__item-icon">
+            <a class="footer__link-icon" href="https://www.pinterest.com/shaxme2006/">
+              <img class="footer__img-icon" src="./imgs/pinterest.svg" alt="Pinterest" width="48" height="48">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer__end">
+
+        <p class="footer__end-date">© 2021</p>
+
+        <p class="footer__end-date none">The Rolling Scopes School</p>
+
+        <p class="footer__end-date">Username</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

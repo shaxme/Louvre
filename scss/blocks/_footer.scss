@@ -1,0 +1,161 @@
+.footer {
+  background-color: $color-black;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.footer__logo {
+  max-width: 195px;
+  width: 100%;
+  height: 50px;
+}
+
+.footer__img {
+  max-width: 195px;
+  width: 100%;
+  height: 50px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__logo:hover {
+  opacity: 0.7;
+}
+
+.footer__list-none {
+  display: none;
+}
+
+.footer__item {
+  padding-bottom: 25px;
+}
+
+.footer__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.footer__list-icon {
+  display: flex;
+  padding-top: 70px;
+}
+
+.footer__item-icon {
+  padding-left: 25px;
+}
+
+.footer__link-icon {
+  display: inline-block;
+}
+
+.footer__end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer__end::before {
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  height: 3px;
+  top: -25px;
+  background-color: #666666;
+  content: "";
+}
+
+.footer__end-date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+@include breakpoint-down(1320px) {
+  .footer__img {
+    max-width: 194px;
+    width: 100%;
+    height: 30px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  .footer__list-icon {
+    max-width: 365px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 30px;
+  }
+
+  .footer__item-icon {
+    padding: 0px;
+    margin-left: 25px;
+  }
+
+  .footer__end::before {
+    top: -43px;
+  }
+}
+
+@include breakpoint-down (451px) {
+
+  .footer__logo {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .footer__img {
+    max-width: 195px;
+    width: 100%;
+    height: 50px;
+    text-align: start
+  }
+
+  .footer__list-none {
+    display: inline-block;
+  }
+
+  .footer__link {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+
+  .footer__list-icon {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    margin: 0;
+  }
+  .footer__img-icon {
+    max-width: 38px;
+    width: 100%;
+    height: 38px;
+  }
+  
+  .none {
+    display: none;
+  }
+
+}

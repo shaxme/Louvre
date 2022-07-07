@@ -1,0 +1,192 @@
+.contacts {
+  padding-bottom: 50px;
+}
+
+.contacts__heading {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  color: $hover-color;
+  border-bottom: 3px solid $line-color;
+}
+
+.contacts__map {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts__louvre {
+  max-width: 960px;
+  width: 100%;
+  padding-top: 75px;
+}
+
+.contacts__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  width: 300px;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  color: #000000;
+}
+
+.contacts__address {
+  width: 325px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-start;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.contacts__tel {
+  width: 325px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-start;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.contacts__mail {
+  width: 325px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  color: #000000;
+}
+
+@include breakpoint-down(1024px) {
+
+  .contacts {
+    padding-bottom: 62px;
+  }
+
+  .contacts__heading {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #9D8665;
+  }
+
+  .contacts__title {
+    max-width: 185px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    max-width: 220px;
+    color: #000000;
+  }
+
+  .contacts__louvre {
+    max-width: 694px;
+    width: 100%;
+    height: 454px;
+    padding-top: 60px;
+  }
+
+  .contacts__address{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  .contacts__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  .contacts__mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    padding-bottom: 0;
+  }
+}
+
+@include breakpoint-down(768px) {
+  
+  .contacts__map {
+    flex-direction: column;
+  }
+
+  .contacts__louvre {
+    max-width: 728px;
+    width: 100%;
+    height: 476px;
+  }
+
+
+}
+
+@include breakpoint-down(451px) {
+  
+  .contacts__heading {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $hover-color;
+  }
+
+  .contacts__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-black;    
+  }
+
+  .contacts__address, .contacts__mail, .contacts__tel {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
